@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "../fractol.h"
+
+
 int type_fractal(t_fractstruct *fr, double re, double im)
 {
     int i;
