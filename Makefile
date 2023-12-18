@@ -6,7 +6,7 @@
 #    By: alrodri2 <alrodri2@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/13 14:47:35 by groman-l          #+#    #+#              #
-#    Updated: 2023/11/09 11:12:15 by alrodri2         ###   ########.fr        #
+#    Updated: 2023/12/18 18:17:20 by alrodri2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,13 +16,13 @@ CC = gcc
 RM = rm -rf
 LIBC = ar -rcs
 FLAGS = -Wall -Wextra -Werror -g
-FRAME = -framework OpenGL -framework AppKit
+FRAME = -framework OpenGL -framework AppKit -fsanitize=address
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SORUCES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 SRC = main.c render.c
 MINILIB = ./MinilibX/	
 L_SRC = ./src
 L_MLX = ./MinilibX/libmlx.a
-INC =   -I ./inc/\
+INC =   -I fractol.h\
         -I ./libft/\
 		-I ./MinilibX/
 
